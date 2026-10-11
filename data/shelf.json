@@ -1,0 +1,168 @@
+{
+  "title": "AACPL Reading Shelf",
+  "version": 1,
+  "note": "DEMO / EXAMPLE holds and due dates only — nothing here is a real checkout. Check aacpl.net for your real account.",
+  "library": {
+    "name": "Anne Arundel County Public Library",
+    "url": "https://www.aacpl.net",
+    "catalog_url": "https://catalog.aacpl.net"
+  },
+  "kids": [
+    {
+      "id": "char",
+      "name": "Charlotte",
+      "short": "Char",
+      "emoji": "🌟",
+      "color": "#e879a9"
+    },
+    {
+      "id": "vic",
+      "name": "Victor",
+      "short": "Vic",
+      "emoji": "🚀",
+      "color": "#38bdf8"
+    }
+  ],
+  "holds": [
+    {
+      "id": "h1",
+      "kid": "char",
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "format": "Book",
+      "status": "ready",
+      "branch": "EXAMPLE · Severna Park",
+      "ready_until": "2026-10-18",
+      "demo": true
+    },
+    {
+      "id": "h2",
+      "kid": "char",
+      "title": "A Good Girl's Guide to Murder",
+      "author": "Holly Jackson",
+      "format": "Book",
+      "status": "queued",
+      "position": 3,
+      "branch": "EXAMPLE · hold queue",
+      "demo": true
+    },
+    {
+      "id": "h3",
+      "kid": "vic",
+      "title": "Diary of a Wimpy Kid: Hot Mess",
+      "author": "Jeff Kinney",
+      "format": "Book",
+      "status": "ready",
+      "branch": "EXAMPLE · Annapolis",
+      "ready_until": "2026-10-16",
+      "demo": true
+    },
+    {
+      "id": "h4",
+      "kid": "vic",
+      "title": "Minecraft Guide to Creative",
+      "author": "Mojang",
+      "format": "Book",
+      "status": "queued",
+      "position": 1,
+      "branch": "EXAMPLE · hold queue",
+      "demo": true
+    }
+  ],
+  "due": [
+    {
+      "id": "d1",
+      "kid": "char",
+      "title": "Percy Jackson: The Lightning Thief",
+      "author": "Rick Riordan",
+      "format": "Book",
+      "due_date": "2026-10-09",
+      "renewable": true,
+      "demo": true,
+      "note": "EXAMPLE overdue highlight — not a real checkout"
+    },
+    {
+      "id": "d2",
+      "kid": "char",
+      "title": "Wonder",
+      "author": "R.J. Palacio",
+      "format": "eBook",
+      "due_date": "2026-10-14",
+      "renewable": true,
+      "demo": true
+    },
+    {
+      "id": "d3",
+      "kid": "vic",
+      "title": "Dog Man: The Scarlet Shedder",
+      "author": "Dav Pilkey",
+      "format": "Book",
+      "due_date": "2026-10-12",
+      "renewable": true,
+      "demo": true
+    },
+    {
+      "id": "d4",
+      "kid": "vic",
+      "title": "National Geographic Kids: Sharks",
+      "author": "Anne Schreiber",
+      "format": "Book",
+      "due_date": "2026-10-20",
+      "renewable": false,
+      "demo": true
+    },
+    {
+      "id": "d5",
+      "kid": "char",
+      "title": "Heartstopper Vol. 1",
+      "author": "Alice Oseman",
+      "format": "Graphic novel",
+      "due_date": "2026-10-11",
+      "renewable": true,
+      "demo": true,
+      "note": "EXAMPLE due today"
+    }
+  ],
+  "picks": [
+    {
+      "id": "p1",
+      "kid": "char",
+      "title": "The Inheritance Games",
+      "author": "Jennifer Lynn Barnes",
+      "why": "Mystery + puzzles — Char wishlist pick",
+      "demo": true
+    },
+    {
+      "id": "p2",
+      "kid": "char",
+      "title": "I Must Betray You",
+      "author": "Ruta Sepetys",
+      "why": "Historical fiction interest",
+      "demo": true
+    },
+    {
+      "id": "p3",
+      "kid": "vic",
+      "title": "The Wild Robot",
+      "author": "Peter Brown",
+      "why": "Robot adventure — Vic pick",
+      "demo": true
+    },
+    {
+      "id": "p4",
+      "kid": "vic",
+      "title": "Who Would Win? Ultimate Shark Rumble",
+      "author": "Jerry Pallotta",
+      "why": "Animal battles",
+      "demo": true
+    }
+  ],
+  "renew_checklist": [
+    {"id": "r-check-due", "label": "Check due dates on aacpl.net"},
+    {"id": "r-renew-online", "label": "Renew eligible items online"},
+    {"id": "r-pickup-ready", "label": "Pick up ready holds this week"},
+    {"id": "r-return-overdue", "label": "Return anything overdue (EXAMPLE list)"},
+    {"id": "r-add-picks", "label": "Place holds on kid picks"},
+    {"id": "r-fridge", "label": "Update fridge board after login"}
+  ]
+}

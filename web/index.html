@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AACPL Reading Shelf · Char &amp; Vic</title>
+<meta name="theme-color" content="#ecfdf5">
+<meta name="description" content="Anne Arundel County Public Library fridge board for Charlotte and Victor — DEMO holds, due dates, and kid picks. Not real checkouts.">
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 48 48" width="44" height="44">
+        <defs>
+          <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#059669"/>
+            <stop offset="1" stop-color="#0ea5e9"/>
+          </linearGradient>
+        </defs>
+        <rect x="8" y="10" width="32" height="28" rx="4" fill="#ecfdf5" stroke="url(#lg)" stroke-width="2.4"/>
+        <path d="M14 16h20M14 22h16M14 28h12" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="34" cy="30" r="6" fill="#fbbf24" stroke="#d97706" stroke-width="1.2"/>
+        <text x="34" y="33.5" text-anchor="middle" font-size="9" fill="#78350f">📚</text>
+      </svg>
+    </div>
+    <div>
+      <h1>AACPL Reading Shelf</h1>
+      <p class="tag">Char · Vic · holds · dues · picks · fridge board</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span class="pill warn" id="demoPill">DEMO / EXAMPLE only</span>
+    <a class="btn primary sm" href="https://www.aacpl.net" target="_blank" rel="noopener">aacpl.net ↗</a>
+  </div>
+</header>
+
+<div class="banner warn-banner" role="status">
+  <strong>Demo shelf.</strong> Holds and due dates below are EXAMPLE placeholders for the Boyd fridge board.
+  Nothing here means a book is actually checked out. Sign in at
+  <a href="https://www.aacpl.net" target="_blank" rel="noopener">www.aacpl.net</a> for real account status.
+</div>
+
+<nav class="tabs" role="tablist" aria-label="Shelf screens">
+  <button class="tab active" data-view="board" role="tab" aria-selected="true">📋 Board</button>
+  <button class="tab" data-view="holds" role="tab" aria-selected="false">📦 Holds</button>
+  <button class="tab" data-view="due" role="tab" aria-selected="false">📅 Due</button>
+  <button class="tab" data-view="picks" role="tab" aria-selected="false">⭐ Picks</button>
+  <button class="tab" data-view="renew" role="tab" aria-selected="false">✅ Renew</button>
+  <button class="tab" data-view="about" role="tab" aria-selected="false">About</button>
+</nav>
+
+<div class="filter-bar" id="filterBar">
+  <span class="filter-label">Show:</span>
+  <button type="button" class="chip active" data-kid="all">Both</button>
+  <button type="button" class="chip char" data-kid="char">🌟 Char</button>
+  <button type="button" class="chip vic" data-kid="vic">🚀 Vic</button>
+</div>
+
+<main>
+  <section id="view-board" class="view active" role="tabpanel"></section>
+  <section id="view-holds" class="view" role="tabpanel"></section>
+  <section id="view-due" class="view" role="tabpanel"></section>
+  <section id="view-picks" class="view" role="tabpanel"></section>
+  <section id="view-renew" class="view" role="tabpanel"></section>
+  <section id="view-about" class="view" role="tabpanel">
+    <div class="about-wrap">
+      <div class="panel">
+        <h2 class="view-title">About this shelf</h2>
+        <p class="lede">Fridge-style reading board for <strong>Charlotte (Char)</strong> and <strong>Victor (Vic)</strong> only — Anne Arundel County Public Library theme.</p>
+        <ul class="about-list">
+          <li>All holds, dues, and picks are <strong>DEMO / EXAMPLE</strong> — not live checkouts.</li>
+          <li>Real library account: <a href="https://www.aacpl.net" target="_blank" rel="noopener">https://www.aacpl.net</a></li>
+          <li>Renew reminder checks save in <code>localStorage</code> on this device.</li>
+          <li>Filter by kid on any board. Overdue items (past due date) get a red highlight.</li>
+        </ul>
+        <div class="about-actions">
+          <button type="button" class="btn ghost danger" id="btnResetRenew">Reset renew checklist</button>
+        </div>
+        <p class="hint" id="aboutHint"></p>
+      </div>
+      <div class="panel soft-panel">
+        <h3>Hash routes</h3>
+        <p class="mono">#board · #holds · #due · #picks · #renew · #about</p>
+        <h3>TokenMax</h3>
+        <p class="hint">Offline single-file burn · port 4319 · kids only Char &amp; Vic.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>Boyd household · Millersville · AACPL</span>
+  <span id="footStats"></span>
+</footer>
+
+<script>
+window.__SHELF__ = /*__SHELF__*/ null /*__/SHELF__*/;
+</script>
+<script>/*__APP__*/</script>
+</body>
+</html>
