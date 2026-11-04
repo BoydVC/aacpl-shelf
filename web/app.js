@@ -154,7 +154,7 @@
       <div class="section-head">
         <div>
           <h2 class="view-title">Kid picks</h2>
-          <p class="lede">Wishlist ideas for Char &amp; Vic — place real holds on <a href="https://www.aacpl.net" target="_blank" rel="noopener">aacpl.net</a>.</p>
+          <p class="lede">Wishlist ideas for Alex &amp; Sam — place real holds on <a href="https://www.aacpl.net" target="_blank" rel="noopener">aacpl.net</a>.</p>
         </div>
       </div>
       <div class="grid">${picks.map((p) => cardBook(p, ['<span class="badge ok">Wishlist</span>'])).join("") || '<p class="empty">No picks</p>'}</div>

@@ -10,15 +10,15 @@
   "kids": [
     {
       "id": "char",
-      "name": "Charlotte",
-      "short": "Char",
+      "name": "Alex",
+      "short": "Alex",
       "emoji": "🌟",
       "color": "#e879a9"
     },
     {
       "id": "vic",
-      "name": "Victor",
-      "short": "Vic",
+      "name": "Samuel",
+      "short": "Sam",
       "emoji": "🚀",
       "color": "#38bdf8"
     }
@@ -129,7 +129,7 @@
       "kid": "char",
       "title": "The Inheritance Games",
       "author": "Jennifer Lynn Barnes",
-      "why": "Mystery + puzzles — Char wishlist pick",
+      "why": "Mystery + puzzles — Alex wishlist pick",
       "demo": true
     },
     {
@@ -145,7 +145,7 @@
       "kid": "vic",
       "title": "The Wild Robot",
       "author": "Peter Brown",
-      "why": "Robot adventure — Vic pick",
+      "why": "Robot adventure — Sam pick",
       "demo": true
     },
     {
