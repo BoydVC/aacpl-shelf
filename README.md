@@ -1,6 +1,6 @@
 # AACPL Reading Shelf
 
-Anne Arundel County Public Library fridge board for **Charlotte (Char)** and **Victor (Vic)** — DEMO holds, due dates, and kid picks. TokenMax burn build.
+Anne Arundel County Public Library fridge board for **Alex (Alex)** and **Samuel (Sam)** — DEMO holds, due dates, and kid picks. TokenMax burn build.
 
 All holds / dues are **EXAMPLE** placeholders (clearly labeled). Nothing invents a real checkout. Real account: [https://www.aacpl.net](https://www.aacpl.net).
 
@@ -30,7 +30,7 @@ Offline single file: `dist/aacpl-shelf.html`
 - `data/shelf.json` — EXAMPLE kids, holds, dues, picks (embedded into dist)  
 - `build.py` / `server.py` / `tests/screenshot.sh`
 
-Kids are only Char and Vic.
+Kids are only Alex and Sam.
 
 
 ---
